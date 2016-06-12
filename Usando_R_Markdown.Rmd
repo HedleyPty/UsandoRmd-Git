@@ -2,7 +2,7 @@
 title: "Usando R Markdown"
 author: "Hedley Knewjen Quintana"
 date: "12 de junio de 2016"
-output: html_document
+output: word_document
 ---
 
 ```{r setup, include=FALSE}
