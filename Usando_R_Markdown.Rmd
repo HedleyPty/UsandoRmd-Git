@@ -1,0 +1,34 @@
+---
+title: "Usando R Markdown"
+author: "Hedley Knewjen Quintana"
+date: "12 de junio de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Este es un documento R Markdown. Markdown es una sintaxis secilla para crear documentos de tipo HTML, PDF y MS Word. Para más detallers en como utilizar el R Markdown haga click [aqui](http://rmarkdown.rstudio.com).
+
+Cuando usted haga click en el botón **Knit** se generará un documento que incluye tanto el contenido del mismo como los resultados de cualquier bloque de código R dentro del mismo. Usted puede añadir esos bloques de la siguiente manera:
+
+```{r carros}
+summary(cars)
+numero <- 4
+```
+
+También se puede incluir código R en linea mediante el uso de lo siguiente: `r numero**4`.
+
+
+## Incluyendo gráficos
+
+Usted tambien puede importar gráficos, por ejemplo:
+
+```{r presion, echo=FALSE}
+plot(pressure)
+```
+
+Note que el parámetro `echo = FALSE` se añadió para prevenir que se genere código desde el bloque R.
