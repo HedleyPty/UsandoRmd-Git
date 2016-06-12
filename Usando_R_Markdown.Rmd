@@ -28,7 +28,7 @@ También se puede incluir código R en linea mediante el uso de lo siguiente: `r
 Usted tambien puede importar gráficos, por ejemplo:
 
 ```{r presion, echo=FALSE}
-plot(pressure)
+plot(pressure, xlab="Temperatura", ylab="Presión", main="Gráfico de presión vs Temperatura")
 ```
 
 Note que el parámetro `echo = FALSE` se añadió para prevenir que se genere código desde el bloque R.
